@@ -20,13 +20,6 @@ RUN pip install -r requirements.txt
 # Download spaCy model
 RUN python -m spacy download en_core_web_sm
 
-# Build frontend
-WORKDIR /app/frontend
-RUN npm install
-RUN npm run build
-
-# Back to root
-WORKDIR /app
 
 ENV PORT=7860
 
