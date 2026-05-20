@@ -15,7 +15,7 @@ COPY . .
 
 # Install backend dependencies
 RUN pip install --upgrade pip
-RUN pip install -r backend/requirements.txt
+RUN pip install -r requirements.txt
 
 # Download spaCy model
 RUN python -m spacy download en_core_web_sm
